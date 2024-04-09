@@ -1,0 +1,194 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secound-color);
+    border-top: 1px solid #42454C;
+}
+
+#especialtyName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+    font-size: 50px;
+    font-weight: 100;
+    color: var(--tertiary-color);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.aboutMe {
+    align-items: center;
+    border: 3px solid var(--white);
+    width: min-content;
+    padding: 30px;
+    border-radius: 35% 0 35% 0;
+    margin-right: 10% ;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.me img {
+    display: flex;
+    border-radius: 50%;
+    height: 86px;
+    width: 86px;
+    object-fit: cover;
+    margin: auto;
+}
+.me h3 {
+    margin-top: 10px;
+}
+
+.me p{
+    margin-bottom: 3%;
+}
+
+.mail, .location, .workTime, .linkWebSite, .languageUsing, .downloadCV {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px;
+}
+
+
+.mail i, .location i, .workTime i, .linkWebSite i, .languageUsing i{
+    vertical-align: text-bottom;
+    padding: 0 10px;
+    color: var(--primary-color);
+}
+
+.mail p, .location p, .workTime p, .linkWebSite p, .me p {
+color: var(--white);
+font-size: small;
+}
+
+.languageUsing p{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    margin: 4px;
+    color: var(--black);
+    font-size: x-small;
+}
+
+.downloadCV {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+    animation: linearCV .9s ease-in-out infinite;
+}
+
+.downloadCV a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.downloadCV i {
+    vertical-align: text-bottom;
+    padding: 0 10px;
+}
+
+
+.description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.presentation h2{
+    color: var(--white);
+    font-weight: 100;
+    font-size: 50px;
+    display: flex;
+}
+
+.descriptionMe{
+    color: var(--white);
+}
+
+#presentationName {
+    color: var(--primary-color);
+    padding-left: 12px;
+}
+
+.label {
+    color: var(--tertiary-color);
+}
+
+.labelH {
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: end;
+}
+
+.labelP {
+    margin-top: 10%;
+    color: var(--tertiary-color);
+}
+
+.presentation p {
+    padding: 10px 0;
+    width: 500px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 215px;
+    height: 378px;
+    background-color: #1A1E23;
+    border-radius: 80px;
+    padding: 20px;
+    margin-left: 20%;
+}
+
+.languageNumber, .developmentTools, .experience {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.languageNumber h1, .developmentTools h1, .experience h1{
+    color: var(--primary-color);
+    align-items: center;
+}
+
+.languageNumber p, .developmentTools p, .experience p {
+    width: 110px;
+    padding-left: 10px;
+    align-items: center;
+    color: var(--white);
+    font-size: small;
+}
+
+/* Animación en el botón de descarga */
+@keyframes linearCV {
+    0% {
+        border: 2px solid var(--primary-color);
+    }
+    50% {
+        border: 2px solid var(--white);
+    }
+    100% {
+        border: 2px solid var(--tertiary-color);
+    }
+}
