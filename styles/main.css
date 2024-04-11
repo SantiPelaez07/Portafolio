@@ -14,3 +14,7 @@
     --secound-color: #292F36;
     --tertiary-color: #98FAEC;
 }
+
+html {
+    scroll-behavior: smooth;
+}

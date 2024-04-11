@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Peláez</title>
     <!-- Enlace con los estilos de css -->
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/navBar.css">
-    <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/mainBar.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <link rel="stylesheet" href="/styles/skills.css">
+    <link rel="stylesheet" href="/styles/proyects.css">
+    <link rel="stylesheet" href="/styles/contact.css">
     <!-- Enlace de los iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Enlace de JavaScript -->
+    <script defer src="/js/app.js"></script>
 </head>
 
 <body>
@@ -24,7 +30,7 @@
                 </a>
             </div>
             <div class="options">
-                <a href="#" id="home">Incio</a>
+                <a href="#" id="home" class="selected">Incio</a>
                 <a href="#">Skills</a>
                 <div class="inputStyle">
                     <input type="text" placeholder="Buscar">
@@ -38,11 +44,11 @@
     </header>
     <main>
         <div class="mainBar">
-            <a href="#"><i class='bx bx-grid-alt bx-sm'></i></a>
-            <a href="#"> <i class='bx bx-user-circle bx-sm'></i></a>
-            <a href="#"> <i class='bx bx-code-alt bx-sm'></i></a>
-            <a href="#"> <i class='bx bx-desktop bx-sm'></i></a>
-            <a href="#"> <i class='bx bx-mail-send bx-sm'></i></a>
+            <a href="#home" class="select"> <i class='bx bx-grid-alt bx-sm'></i></a>
+            <a href="#profile"> <i class='bx bx-user-circle bx-sm'></i></a>
+            <a href="#skills"> <i class='bx bx-code-alt bx-sm'></i></a>
+            <a href="#proyects"> <i class='bx bx-desktop bx-sm'></i></a>
+            <a href="#contact"> <i class='bx bx-mail-send bx-sm'></i></a>
         </div>
 
 
@@ -114,6 +120,18 @@
                 </div>
             </div>
             </div>
+        </section>
+        <section class="profile" id="profile">
+
+        </section>
+        <section class="skills" id="skills">
+
+        </section>
+        <section class="proyects" id="proyects">
+
+        </section>
+        <section class="contact" id="contact">
+
         </section>
     </main>
 </body>

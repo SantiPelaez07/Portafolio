@@ -29,6 +29,7 @@
 
 #home {
     color: var(--primary-color);
+    transition: .8s;
 }
 
 .options {
@@ -41,6 +42,7 @@
     padding: 10px;
     color: var(--white);
     font-size: 14px;
+    position: relative;
 }
 
 .options a i{
@@ -68,4 +70,28 @@
 
 .options input:focus{
     outline: none;
+}
+
+.options a::after {
+    content: "";
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition:  opacity .4s;
+}
+
+.options a:hover:after, .options a:hover::after {
+    opacity: 1;
+}
+
+.options a:hover {
+    color: var(--primary-color);
+} 
+
+#home:hover {
+    color: var(--white);
 }
