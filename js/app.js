@@ -22,3 +22,5 @@ menuLinks.forEach(menuLink => {
         observer.observe(target)
     }
 });
+
+

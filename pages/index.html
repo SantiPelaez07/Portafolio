@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/styles/navBar.css">
     <link rel="stylesheet" href="/styles/mainBar.css">
     <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/profile.css">
     <link rel="stylesheet" href="/styles/skills.css">
     <link rel="stylesheet" href="/styles/proyects.css">
     <link rel="stylesheet" href="/styles/contact.css">
@@ -24,13 +23,13 @@
     <header>
         <div class="nav-bar">
             <div class="name">
-                <a href="#">
+                <a href="#contact">
                     <h1 class="logo">&lt;S/&gt;</h1>
                     <h2 class="nameLogo">SantiagoPeláez</h2>
                 </a>
             </div>
             <div class="options">
-                <a href="#" id="home" class="selected">Incio</a>
+                <a href="#" id="initialOptions" class="selected">Incio</a>
                 <a href="#">Skills</a>
                 <div class="inputStyle">
                     <input type="text" placeholder="Buscar">
@@ -45,15 +44,14 @@
     <main>
         <div class="mainBar">
             <a href="#home" class="select"> <i class='bx bx-grid-alt bx-sm'></i></a>
-            <a href="#profile"> <i class='bx bx-user-circle bx-sm'></i></a>
             <a href="#skills"> <i class='bx bx-code-alt bx-sm'></i></a>
             <a href="#proyects"> <i class='bx bx-desktop bx-sm'></i></a>
             <a href="#contact"> <i class='bx bx-mail-send bx-sm'></i></a>
         </div>
 
 
-        <section class="home">
-            <h1 id="especialtyName">Desarrollador</h1>
+        <section class="home" id="home">
+            <h1 id="specialtyName">Desarrollador</h1>
             <div class="content">
                 <div class="aboutMe">
                     <div class="me">
@@ -100,38 +98,52 @@
                         <h2>Full-Stack Developer</h2>
                         <p class="labelH">&lt;/h1&gt;</p>
                         <p class="labelP">&lt;p&gt;</p>
-                        <p class="descriptionMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo eum, saepe velit asperiores deserunt vero minus quod molestiae consequuntur ut laudantium ab, corrupti repellendus sunt libero esse eveniet dignissimos!</p>
+                        <p class="descriptionMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo
+                            eum, saepe velit asperiores deserunt vero minus quod molestiae consequuntur ut laudantium
+                            ab, corrupti repellendus sunt libero esse eveniet dignissimos!</p>
                         <p class="label">&lt;/p&gt;</p>
-                    </div>
-                    <div class="summary">
-                        <div class="languageNumber">
-                        <h1>5</h1>
-                        <p>Lenguajes de programación</p>
-                    </div>
-                    <div class="developmentTools">
-                        <h1>3</h1>
-                        <p>Herramientas de desarrollo</p>
-                    </div>
-                    <div class="experience">
-                        <h1>6</h1>
-                        <p>Meses de experiencia</p>
-                    </div> 
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <section class="profile" id="profile">
-
-        </section>
+    
         <section class="skills" id="skills">
+            <div class="scroll">
+                <a href="#home">
+                    <i class='bx bx-mouse bx-sm'></i></a>
+                <i class='bx bx-dots-vertical-rounded bx-sm'></i>
+            </div>
+
+            <div class="presentationSkills">
+                <h2>Skills</h2>
+                <div class="linear"></div>
+                <p>Día a día camino en dirección a la mejora y el aprendizaje</p>
+
+                <div class="specialtyProgramming">
+                    <h4>Web Development</h4>
+                    <p>HTML, CSS, JS, BootStrap, JAVA</p>
+                </div>
+
+            </div>
+
 
         </section>
+
         <section class="proyects" id="proyects">
-
+            <div class="scroll">
+                <a href="#skills">
+                    <i class='bx bx-mouse bx-sm'></i></a>
+                <i class='bx bx-dots-vertical-rounded bx-sm'></i>
+            </div>
         </section>
-        <section class="contact" id="contact">
 
+        <section class="contact" id="contact">
+            <div class="scroll">
+                <a href="#proyects">
+                    <i class='bx bx-mouse bx-sm '></i></a>
+                <i class='bx bx-dots-vertical-rounded bx-sm'></i>
+            </div>
         </section>
     </main>
 </body>
