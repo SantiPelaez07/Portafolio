@@ -1,4 +1,96 @@
 .contact {
     width: 100%;
     height: 100vh;
+    background-color: var(--quaternary-color);
+}
+
+.presentationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    margin-top: 3%;
+    padding: 1%;
+    color: var(--primary-color);
+    font-weight: normal;
+}
+
+.linearDecoration{
+    width: 10%;
+    height: 2px;
+    position: relative;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.linearDecoration::after,
+.linearDecoration::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.linearDecoration::after{
+    top: -5px;
+    left: 0;
+}
+
+.linearDecoration::before{
+    top: -5px;
+    right: 0;
+}
+
+span {
+    color: var(--white);
+    padding: 0.85375rem;
+}
+
+.subtitle{
+    margin-top: 1.7075rem;
+    color: var(--primary-color);
+    font-weight: lighter;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.312rem;
+    padding: 0.9375rem 1.875rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1.875rem 0 1.875rem 0;
+}
+
+.formContact{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 80%;
+    margin: 3.5rem;
+    padding: 4rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.sameLevel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 19px;
+}
+
+.field{
+    width: 100%;
+}
+
+.field label {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

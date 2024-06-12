@@ -1,7 +1,222 @@
 .skills {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/fondoSkills.jpg");
-    background-size: cover;
+    background-color: var(--quaternary-color);
+    /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/fondoSkills.jpg");
+    background-size: cover; */
+}
+
+.presentationSkills {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentationSkills h2 {
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.presentationSkills p {
+    padding: 1%;
+}
+
+.linear {
+    width: 10%;
+    border: 0;
+    background-color: var(--primary-color);
+    height: 2px;
+    position: relative;
+}
+
+.linear::after, 
+.linear::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.linear::after {
+    top: -5px;
+    right: 0px;
+}
+
+.linear::before {
+    top: -5px;
+    left: 0px;
+}
+
+.fullstackLanguages {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    padding: 0% 7%;
+    width: 100%;
+    gap: 20%;
+}
+
+
+.Front-EndTechnologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.Back-EndTechnologies {
+    display: flex;
+    flex-direction: column;         
+    align-items: center;
+    width: 50%;
+}
+
+.designTechnologies {
+    color: var(--white);
+    padding-bottom: 1%;
+}
+
+.Back-EndTechnologies h3, .Front-EndTechnologies h3 {
+    color: var(--white);
+    width: max-content;
+}
+
+.frontendProgramming {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0%;
+    width: 50%;
+}
+
+.HTML, .CSS, .JS, .BootStrap, .JAVA, .SQL, .SpringBoot, .FIGMA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+}
+
+.HTML i {
+    background-color: #e34c26;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+
+.CSS i {
+    background-color: #264de4;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+
+.JS i {
+    background-color: #f0db4f;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+
+.BootStrap i {
+    background-color: #673AB7;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.HTML p, .CSS p, .JS p, .BootStrap p {
+    margin-top: 9%;
+    color: var(--white);
+}
+
+
+.backendProgramming {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0%;
+    width: 50%;
+}
+
+.JAVA i{
+    background-color: #5382a1;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.SQL i{
+    background-color: #216287;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.SpringBoot i {
+    background-color: #8BC34A;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+
+.JAVA p, .SQL p, .SpringBoot p {
+    margin-top: 9%;
+    width: max-content;
+    color: var(--white);
+}
+
+.technologiesF {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+.technologiesB {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+.technologiesD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.FIGMA i {
+    background-color: #F44F5A;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.FIGMA p {
+    margin-top: 9%;
+    color: var(--white);
+}
+
+.summary {
+    background-color: red;
 }
 
