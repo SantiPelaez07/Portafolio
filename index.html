@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/skills.css">
     <link rel="stylesheet" href="/styles/proyects.css">
     <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <!-- Enlace de los iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Enlace de JavaScript -->
@@ -99,9 +100,14 @@
                         <h2>Full-Stack Developer</h2>
                         <p class="labelH">&lt;/h1&gt;</p>
                         <p class="labelP">&lt;p&gt;</p>
-                        <p class="descriptionMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo
-                            eum, saepe velit asperiores deserunt vero minus quod molestiae consequuntur ut laudantium
-                            ab, corrupti repellendus sunt libero esse eveniet dignissimos!</p>
+                        <p class="descriptionMe">Soy una persona con comunicación asertiva, capaz de
+                            expresar ideas claramente y facilitar la colaboración en
+                            equipo. Me adapto fácilmente a los cambios y aprendo con
+                            rapidez, enfrentando nuevos desafíos con confianza. Soy
+                            responsable y honesto, asegurando siempre un desempeño
+                            íntegro. Además, tengo una habilidad probada para tomar
+                            decisiones efectivas, basadas en un análisis cuidadoso.
+                        </p>
                         <p class="label">&lt;/p&gt;</p>
                     </div>
                 </div>
@@ -222,19 +228,36 @@
                 <form action="" method="post">
                     <div class="sameLevel">
                         <div class="field">
-                            <label for="name">Ingresa tu nombre</label>
-                            <input type="text" id="nameForm">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="nameForm" required placeholder="Ingresa tu nombre">
                         </div>
                         <div class="field">
-                            <label for="email">Ingresa tu email</label>
-                            <input type="email" id="emailForm">
+                            <label for="email">Email *</label>
+                            <input type="email" id="emailForm" required placeholder="Ingresa tu email">
                         </div>
                     </div>
-                    <div class="field">
-                        <label for="message">Ingresa el mensaje</label>
-                        <input type="text" id="message">
+                    <div class="descriptionMessage">
+                        <div class="field">
+                            <label for="message">Mensaje *</label>
+                            <input type="text" id="message" required placeholder="Ingresa el mensaje">
+                        </div>
                     </div>
                 </form>
+                <button type="submit" class="submit">Enviar <i class='bx bx-paper-plane bx-sm'></i></button>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="nameCopyright">
+                <span>© 2024 SantiagoPeláez. All rights reserved.</span>
+            </div>
+            <div class="conditions">
+                <span>Privacy Policy</span>
+                <span>Terms & Conditions</span>
+            </div>
+            <div class="socialNetwork">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-github'></i>
+                <i class='bx bxl-discord-alt'></i>
             </div>
         </section>
     </main>

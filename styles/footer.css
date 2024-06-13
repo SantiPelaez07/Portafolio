@@ -1,0 +1,25 @@
+.copyright{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .5px solid #42454C;
+}
+
+span {
+    font-size: 12px;
+}
+
+.socialNetwork i {
+    background-color: var(--primary-color);
+    padding: 4px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.socialNetwork{
+    margin-right: 6rem;
+}
+
