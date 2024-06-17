@@ -20,3 +20,38 @@
 .scroll .bx-dots-vertical-rounded {
     color: var(--white);
 }
+
+.titleProyect{
+    color: var(--white);
+    margin: 3rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.separator {
+    width: 10%;
+    border: 0;
+    background-color: var(--primary-color);
+    height: 2px;
+    position: relative;
+}
+
+.separator::after, 
+.separator::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.separator::after {
+    top: -5px;
+    right: 0px;
+}
+
+.separator::before {
+    top: -5px;
+    left: 0px;
+}
