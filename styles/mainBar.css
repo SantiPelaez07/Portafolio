@@ -5,7 +5,7 @@
     align-items: center;
     width: 50px;
     position: absolute;
-    padding: 20px;
+    padding: 28px;
     border: 1px  solid var(--white);
     border-radius: 50px;
     margin: 10% 5%;
@@ -25,9 +25,6 @@
     position: relative;
     margin: 2px;
 }
-
-
-
 
 
 .mainBar a::after{

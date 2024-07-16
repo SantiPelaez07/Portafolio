@@ -19,6 +19,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Enlace de JavaScript -->
     <script defer src="/js/app.js"></script>
+
+    <!-- Envío de emails -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('3YJ44gPTDLd9GGCd9')
+    </script>
+
 </head>
 
 <body>
@@ -37,9 +45,9 @@
                     <input type="text" placeholder="Buscar">
                     <i class='bx bx-search'></i>
                 </div>
-                <a href="#"><i class='bx bx-phone-call'></i> Contacto</a>
-                <a href="#"><i class='bx bx-envelope'></i> Email</a>
-                <a href="https://github.com/SantiPelaez07"><i class='bx bxl-github'></i> Github</a>
+                <a href="tel:+573117673822"><i class='bx bx-phone-call'></i> Contacto</a>
+                <a href="mailto:santipelaez0@gmail.com" target="_blank"><i class='bx bx-envelope'></i> Email</a>
+                <a href="https://github.com/SantiPelaez07" target="_blank"><i class='bx bxl-github'></i> Github</a>
             </div>
         </div>
     </header>
@@ -100,7 +108,9 @@
                         <h2>Full-Stack Developer</h2>
                         <p class="labelH">&lt;/h1&gt;</p>
                         <p class="labelP">&lt;p&gt;</p>
-                        <p class="descriptionMe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, temporibus provident eaque ad, repellendus quam laborum cum, voluptates est sunt laboriosam numquam ipsum veritatis aspernatur nostrum expedita sed molestias reprehenderit.
+                        <p class="descriptionMe">Soy una persona con comunicación asertiva, capaz de expresar ideas
+                            claramente y facilitar la colaboración en equipo. Me adapto fácilmente a los cambios y
+                            aprendo con rapidez, enfrentando nuevos desafíos con confianza.
                         </p>
                         <p class="label">&lt;/p&gt;</p>
                     </div>
@@ -122,7 +132,7 @@
                 <h2>Skills</h2>
                 <div class="linear"></div>
                 <p>Día a día camino en dirección de la mejora y el aprendizaje</p>
-
+                <img src="/img/parte 1.png" alt="Simbolos" class="parte1">
             </div>
             <div class="fullstackLanguages">
                 <div class="technologiesF">
@@ -205,7 +215,15 @@
                 <div class="separator"></div>
                 <div class="viewProyects">
                     <div class="proyect">
-                        
+                        <div class="imgProyect">
+                            <iframe src="https://freshflavors.vercel.app/" 
+                            width="1280px" height="720px"   title="Proyecto"></iframe>
+                        </div>
+                        <div class="informationProyect">
+                            <h4>Fresh Flavors</h4>
+                            <p></p>
+                            <a href="">View</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -226,26 +244,32 @@
             </div>
 
             <div class="formContact">
-                <form action="" method="post">
+                <form id="form">
                     <div class="sameLevel">
                         <div class="field">
-                            <label for="name">Nombre *</label>
-                            <input type="text" id="nameForm" required placeholder="Ingresa tu nombre">
+                            <label for="from_name">Nombre *</label>
+                            <input type="text" name="from_name" id="from_name" required placeholder="Ingresa tu nombre">
                         </div>
                         <div class="field">
-                            <label for="email">Email *</label>
-                            <input type="email" id="emailForm" required placeholder="Ingresa tu email">
+                            <label for="email_sender">Email *</label>
+                            <input type="email" name="email_sender" id="email_sender" required
+                                placeholder="Ingresa tu email">
                         </div>
                     </div>
                     <div class="descriptionMessage">
                         <div class="field">
-                            <label for="message">Mensaje *</label>
-                            <input type="text" id="message" required placeholder="Ingresa el mensaje">
+                            <label for="message">Message</label>
+                            <input type="text" name="message" id="message" required placeholder="Ingresa el mensaje">
                         </div>
                     </div>
+                    <div class="buttonSend">
+                        <button type="submit" class="submit">Enviar <i class='bx bx-paper-plane bx-sm'></i></button>
+                    </div>
                 </form>
-                <button type="submit" class="submit">Enviar <i class='bx bx-paper-plane bx-sm'></i></button>
             </div>
+
+
+
         </section>
         <section class="copyright">
             <div class="nameCopyright">

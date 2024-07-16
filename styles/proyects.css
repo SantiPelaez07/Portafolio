@@ -55,3 +55,59 @@
     top: -5px;
     left: 0px;
 }
+
+.viewProyects{
+    width: 70%;
+    display: flex;
+}
+
+.proyect {
+    padding: 0 4rem;
+    margin: 3rem;
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.625rem;
+    background: var(--quaternary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.imgProyect {
+    width: 25rem; /* Ancho del contenedor */
+    height: 14rem; /* Altura del contenedor */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    position: relative;
+    border: none; /* Agregar un borde al contenedor */
+}
+.imgProyect iframe {
+    width: 1280px; /* Ancho de una pantalla de PC típica */
+    height: 720px; /* Altura de una pantalla de PC típica */
+    border: none; /* Eliminar el borde del iframe */
+    transform: scale(0.31); /* Escalar el contenido del iframe */
+    transform-origin: 0 0; /* Asegurarse de que el escalado se haga desde la esquina superior izquierda */
+    position: absolute; /* Posicionar el iframe absolutamente dentro del contenedor */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+.informationProyect {
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* <div class="proyect">
+                        <div class="imgProyect">
+                            <img src="" alt="Proyect">
+                        </div>
+                        <div class="informationProyect">
+                            <h2>Title</h2>
+                            <p>Description</p>
+                            <a href="">View</a>
+                        </div>
+                    </div> */

@@ -117,6 +117,13 @@ form{
     margin-top: 30px;
 }
 
+.buttonSend{
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .submit {
     padding: 1rem 2rem;
     background-color: var(--primary-color);
@@ -124,9 +131,6 @@ form{
     border: none;
     cursor: pointer;
     width: 8rem;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
 }
 
 .submit i {
