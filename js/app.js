@@ -29,6 +29,7 @@ document.getElementById('form')
     .addEventListener('submit', function (event) {
         event.preventDefault();
 
+        const btn = document.querySelector(".buttonSend");
         btn.value = 'Sending...';
 
         const serviceID = 'default_service';
