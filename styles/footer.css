@@ -23,3 +23,11 @@ span {
     margin-right: 6rem;
 }
 
+.socialNetwork a {
+    text-decoration: none;
+}
+
+.socialNetwork i {
+    color: var(--black);
+}
+

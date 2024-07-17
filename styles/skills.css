@@ -5,6 +5,9 @@
     /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/fondoSkills.jpg");
     background-size: cover; */
 }
+.informationSkill{
+    height: 30%;
+}
 
 .presentationSkills {
     color: var(--white);
@@ -14,8 +17,8 @@
 }
 
 .presentationSkills h2 {
-    margin-top: 3%;
-    padding: 1%;
+    margin-top: .6rem;
+    padding: 0 1% 1%;
 }
 
 .presentationSkills p {
@@ -56,9 +59,18 @@
     width: 8rem;
     right: 150px;
 }
+.technologies{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .fullstackLanguages {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 2%;
     padding: 0% 7%;
@@ -86,9 +98,10 @@
     padding-bottom: 1%;
 }
 
-.Back-EndTechnologies h3, .Front-EndTechnologies h3 {
+.Back-EndTechnologies h3, .Front-EndTechnologies h3, .designTechnologies h3, .versionController h3 {
     color: var(--white);
     width: max-content;
+    margin: .7rem;
 }
 
 .frontendProgramming {
@@ -98,7 +111,7 @@
     width: 50%;
 }
 
-.HTML, .CSS, .JS, .BootStrap, .JAVA, .SQL, .SpringBoot, .FIGMA{
+.HTML, .CSS, .JS, .BootStrap, .JAVA, .SQL, .SpringBoot, .FIGMA, .git, .gitHub{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,6 +215,13 @@
     position: relative;
 }
 
+.tools{
+    width: 70%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .technologiesD {
     display: flex;
     flex-direction: column;
@@ -220,6 +240,48 @@
 
 .FIGMA p {
     margin-top: 9%;
+    color: var(--white);
+}
+
+.versionController{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+
+.versionController .app{
+    display: flex;
+    justify-content: center;
+}
+
+.git i{
+    background-color: #F44F5A;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.git p{
+    margin-top: 9%;
+    width: max-content;
+    color: var(--white);
+}
+
+.gitHub i {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.gitHub p{
+    margin-top: 9%;
+    width: max-content;
     color: var(--white);
 }
 
