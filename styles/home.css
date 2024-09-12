@@ -198,3 +198,26 @@ font-size: small;
         border: 4px solid var(--tertiary-color);
     }
 }
+
+
+
+/* 
+Style responsive
+*/
+@media (max-width: 768px) {
+    /* Para pantallas grandes */
+
+    .sectionName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    @keyframes linearCV {
+        0% {
+            display: none;
+        }
+    }
+
+}

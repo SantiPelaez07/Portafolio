@@ -44,3 +44,18 @@
 .mainBar a.select::after, .mainBar a.select:hover::after {
     opacity: 1;
 }
+
+
+/* 
+Style responsive
+*/
+@media (max-width: 768px) {
+    /* Para pantallas grandes */
+
+    .mainBar{
+        position: fixed;
+        top: 70px;
+    }
+
+
+}
