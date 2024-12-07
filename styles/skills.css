@@ -63,11 +63,12 @@
 
 .technologies {
     width: 100%;
-    height: 70%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .fullstackLanguages {

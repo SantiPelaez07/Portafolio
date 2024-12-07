@@ -10,11 +10,12 @@
     border-radius: 50px;
     margin: 10% 5%;
     position: fixed;
+    background-color: #f4f4f4;
 }
 
 .mainBar i {
     padding: 8px;
-    color: var(--white);
+    color: #000000;
 }
 
 .mainBar ul li {

@@ -51,3 +51,34 @@ document.getElementById('form')
     });
 
 
+
+//Carousel for the proyects viewer
+const carousel = document.querySelector('.viewProyects');
+const items = document.querySelectorAll('.proyect');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let current = 0;
+
+function updateCarousel(){
+    const width = items[0].offsetWidth;
+    carousel.style.transform = `translateX(-${current * width}px)`;
+}
+
+    prevButton.addEventListener('click', () => {
+      current = (current > 0 ) ? current - 1 : items.length - 1;
+      updateCarousel();
+      console.log("prev")
+    })
+
+    nextButton.addEventListener('click', () => {
+        current = (current < items.length - 1 ) ? current + 1 : 0;
+        updateCarousel();
+      console.log("next")
+
+      })
+
+      window.addEventListener('resize', updateCarousel)
+
+updateCarousel()
+
