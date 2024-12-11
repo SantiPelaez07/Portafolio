@@ -100,7 +100,7 @@ form{
 
 .field input {
     border: none;
-    background: none;
+    background: none !important;
     outline: 0px;
     padding: 10px 10px 10px 5px;
     font-size: 16px;
@@ -112,6 +112,7 @@ form{
 .field input:focus{
     outline: none;
 }
+
 
 .descriptionMessage{
     margin-top: 30px;

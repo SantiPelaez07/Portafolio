@@ -23,6 +23,34 @@ menuLinks.forEach(menuLink => {
     }
 });
 
+//Search input 
+const searchInput = document.querySelector('#searchGeneral');
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  const allElements = document.querySelectorAll('*');
+
+  allElements.forEach(element => {
+    element.style.backgroundColor = "";
+    if(element.childElementCount === 0){
+        const text = element.textContent.toLowerCase();
+        if(text.includes(query) && query != ""){
+            element.style.backgroundColor = "yellow";
+            element.scrollIntoView({ behavior: "smooth", block: "center"})
+            document.addEventListener('click', () => {
+                element.style.backgroundColor = "";
+                searchInput.value = "";
+            })
+        }
+    }
+  })
+  
+})
+
+
+
+
+
+
 //  Envío de emails con la librería EmailJS
 
 document.getElementById('form')
@@ -34,16 +62,20 @@ document.getElementById('form')
 
         const serviceID = 'default_service';
         const templateID = 'template_cd9wzcu';
+        const form = document.getElementById('form');
 
-        const message = document.querySelector("#message").value;
-        const templateParams = {
-            message: message
-        };
+        //Selections of the inputs
+        const inputName = document.querySelector('#from_name');
+        const inputEmail = document.querySelector('#email_sender');
+        const inputMessage = document.querySelector('#message');
 
-        emailjs.sendForm(serviceID, templateID, templateParams)
+        emailjs.sendForm(serviceID, templateID, form)
             .then(() => {
                 btn.value = 'Send Email';
                 alert('Sent!');
+                inputName.value = "";
+                inputMessage.value = "";
+                inputEmail.value = "";
             }, (err) => {
                 btn.value = 'Send Email';
                 alert(JSON.stringify(err));
@@ -51,34 +83,33 @@ document.getElementById('form')
     });
 
 
+// //Carousel for the proyects viewer
+// const carousel = document.querySelector('.viewProyects');
+// const items = document.querySelectorAll('.proyect');
+// const prevButton = document.getElementById('prev');
+// const nextButton = document.getElementById('next');
 
-//Carousel for the proyects viewer
-const carousel = document.querySelector('.viewProyects');
-const items = document.querySelectorAll('.proyect');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
+// let current = 0;
 
-let current = 0;
+// function updateCarousel(){
+//     const width = items[0].offsetWidth;
+//     carousel.style.transform = `translateX(-${current * width}px)`;
+// }
 
-function updateCarousel(){
-    const width = items[0].offsetWidth;
-    carousel.style.transform = `translateX(-${current * width}px)`;
-}
+//     prevButton.addEventListener('click', () => {
+//       current = (current > 0 ) ? current - 1 : items.length - 1;
+//       updateCarousel();
+//       console.log("prev")
+//     })
 
-    prevButton.addEventListener('click', () => {
-      current = (current > 0 ) ? current - 1 : items.length - 1;
-      updateCarousel();
-      console.log("prev")
-    })
+//     nextButton.addEventListener('click', () => {
+//         current = (current < items.length - 1 ) ? current + 1 : 0;
+//         updateCarousel();
+//       console.log("next")
 
-    nextButton.addEventListener('click', () => {
-        current = (current < items.length - 1 ) ? current + 1 : 0;
-        updateCarousel();
-      console.log("next")
+//       })
 
-      })
+//       window.addEventListener('resize', updateCarousel)
 
-      window.addEventListener('resize', updateCarousel)
-
-updateCarousel()
+// updateCarousel()
 
