@@ -1,4 +1,4 @@
-.toggle i {
+.toggle {
     display: none;
 }
 
@@ -103,11 +103,14 @@
 Style responsive
 */
 @media (max-width: 768px) {
-    /* Para pantallas grandes */
+    /* Para pantallas móviles */
 
     .toggle {
-        position: absolute;
         display: block;
+        height: min-content;
+        width: 100%;
+        padding: .7rem;
+        background: var(--secound-color);
     }
 
     .name,
@@ -117,9 +120,8 @@ Style responsive
     }
 
     .toggle i {
-        position: absolute;
-        top: 15px;
-        left: 0px;
+        position: relative;
+        color: var(--white);
         cursor: pointer;
     }
 
@@ -132,7 +134,7 @@ Style responsive
         position: absolute;
         display: flex;
         flex-direction: column;
-        left: -100%;
+        left: 100%;
         width: 100%;
         height: 100vh;
     }

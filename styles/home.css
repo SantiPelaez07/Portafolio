@@ -123,9 +123,10 @@ font-size: small;
     display: flex;
 }
 
-.descriptionMe{
+.descriptionMe p{
     color: var(--white);
     font-size: clamp(0.75rem, 1.119vw + 0.033rem, 1.375rem);
+    width: clamp(12.5rem, 26.042vw + 0rem, 31.25rem);
 }
 
 #presentationName {
@@ -150,8 +151,9 @@ font-size: small;
 }
 
 .presentation p {
+    color: var(--white);
     padding: 10px 0;
-    width: 500px;
+    width: 31.25rem;
 }
 
 .summary {
@@ -205,32 +207,58 @@ font-size: small;
 Style responsive
 */
 @media (max-width: 768px) {
-    /* Para pantallas grandes */
+    /* Para pantallas móviles */
 
-    .sectionName {
+    .home {
+        height: 100vh;
+    }
+
+    #specialtyName {
+        margin-top: 2rem;
+    }
+
+    .sectionName{
         display: flex;
         justify-content: center;
     }
+    .aboutMe {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .sectionName h2 {
-        font-size: 20px;
+        font-size: 1rem;
+        margin: 3rem 0rem 0;
     }
 
     #presentationName {
-        font-size: 20rem;
+        font-size: 1rem;
         padding: 0;
-        margin: 0 10px 0;
+        margin: 0 0.1rem 0;
     }
 
     #presentationName::first-letter {
         text-transform: uppercase;
+        margin-left: 0.6rem;
     }
 
     #rowName {
-        margin-left: 10px;
+        margin-left: 0.2rem;
         text-transform: lowercase;
     }
+
+    .label, .labelH {
+        display: none;
+    }
     
+    .descriptionMe{
+        background-color: red;
+    
+    }
+
+
     @keyframes linearCV {
         0% {
             display: none;

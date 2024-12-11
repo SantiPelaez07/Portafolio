@@ -51,11 +51,10 @@
 Style responsive
 */
 @media (max-width: 768px) {
-    /* Para pantallas grandes */
+    /* Para pantallas móviles */
 
     .mainBar{
-        position: fixed;
-        top: 70px;
+        display: none;
     }
 
 
