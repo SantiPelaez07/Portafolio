@@ -147,13 +147,13 @@ font-size: small;
 
 .labelP {
     margin-top: 5%;
-    color: var(--tertiary-color);
+    color: var(--tertiary-color) !important;
 }
 
 .presentation p {
     color: var(--white);
     padding: 10px 0;
-    width: 31.25rem;
+    width: clamp(15.625rem, 41.806vw - 4.442rem, 31.25rem);
 }
 
 .summary {
@@ -209,8 +209,9 @@ Style responsive
 @media (max-width: 768px) {
     /* Para pantallas móviles */
 
-    .home {
-        height: 100vh;
+    .home{
+        height: fit-content;
+        padding-bottom: 2rem;
     }
 
     #specialtyName {
@@ -218,8 +219,7 @@ Style responsive
     }
 
     .sectionName{
-        display: flex;
-        justify-content: center;
+        display: none;
     }
     .aboutMe {
         margin: 0;
@@ -228,35 +228,38 @@ Style responsive
         align-items: center;
     }
 
-    .sectionName h2 {
+    .description{
+        display: none;
+    }
+
+    /* .sectionName h2 {
         font-size: 1rem;
-        margin: 3rem 0rem 0;
+        margin: 1rem 0rem 0;
     }
 
     #presentationName {
         font-size: 1rem;
         padding: 0;
-        margin: 0 0.1rem 0;
+        margin: 0 0.2rem 0;
     }
 
     #presentationName::first-letter {
         text-transform: uppercase;
-        margin-left: 0.6rem;
+        margin-left: 5px;
     }
 
     #rowName {
-        margin-left: 0.2rem;
+        margin-left: 5px;
         text-transform: lowercase;
     }
 
-    .label, .labelH {
+    .label, .labelH, .labelP {
         display: none;
     }
     
     .descriptionMe{
-        background-color: red;
-    
-    }
+        width: 100px;
+    } */
 
 
     @keyframes linearCV {

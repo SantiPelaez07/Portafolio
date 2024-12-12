@@ -140,3 +140,24 @@ form{
     right: 23px;
     top: 12px;
 }
+
+/* 
+Style responsive
+*/
+@media (max-width: 768px) {
+
+    .linearDecoration {
+        width: 37%;
+    }
+
+    .sameLevel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttonSend {
+        margin: 2rem 0;
+    }
+
+
+}

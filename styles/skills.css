@@ -181,7 +181,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1% 0%;
-    width: 50%;
+    width: 100%;
 }
 
 .JAVA i {
@@ -317,12 +317,48 @@ Style responsive
 */
 @media (max-width: 768px) {
 
+    .skills{
+        position: relative;
+    }
+
+    .linear{
+        width: 30%;
+    }
+
     .parte1 {
         width: 4rem;
         height: 4rem;
-        right: 100px;
-
+        right: 40px;
+        top: 30px;
     }
+
+    .presentationSkills p {
+        display: none;
+    }
+
+    .informationSkill {
+        height: 25%;
+    }
+
+    .fullstackLanguages, .tools {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .technologiesF, .technologiesB {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .technologiesD{
+        margin-bottom: 40px;
+    }
+
 
     .technologies {
         display: flex;
