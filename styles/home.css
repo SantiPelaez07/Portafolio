@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 2rem 0;
 }
 
 #specialtyName {
@@ -210,6 +211,7 @@ Style responsive
     /* Para pantallas móviles */
 
     .home{
+        top: -4rem;
         height: fit-content;
         padding-bottom: 2rem;
     }
@@ -260,12 +262,5 @@ Style responsive
     .descriptionMe{
         width: 100px;
     } */
-
-
-    @keyframes linearCV {
-        0% {
-            display: none;
-        }
-    }
 
 }

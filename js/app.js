@@ -26,24 +26,24 @@ menuLinks.forEach(menuLink => {
 //Search input 
 const searchInput = document.querySelector('#searchGeneral');
 searchInput.addEventListener('input', () => {
-  const query = searchInput.value.toLowerCase();
-  const allElements = document.querySelectorAll('*');
+    const query = searchInput.value.toLowerCase();
+    const allElements = document.querySelectorAll('*');
 
-  allElements.forEach(element => {
-    element.style.backgroundColor = "";
-    if(element.childElementCount === 0){
-        const text = element.textContent.toLowerCase();
-        if(text.includes(query) && query != ""){
-            element.style.backgroundColor = "yellow";
-            element.scrollIntoView({ behavior: "smooth", block: "center"})
-            document.addEventListener('click', () => {
-                element.style.backgroundColor = "";
-                searchInput.value = "";
-            })
+    allElements.forEach(element => {
+        element.style.backgroundColor = "";
+        if (element.childElementCount === 0) {
+            const text = element.textContent.toLowerCase();
+            if (text.includes(query) && query != "") {
+                element.style.backgroundColor = "yellow";
+                element.scrollIntoView({ behavior: "smooth", block: "center" })
+                document.addEventListener('click', () => {
+                    element.style.backgroundColor = "";
+                    searchInput.value = "";
+                })
+            }
         }
-    }
-  })
-  
+    })
+
 })
 
 
@@ -112,4 +112,19 @@ document.getElementById('form')
 //       window.addEventListener('resize', updateCarousel)
 
 // updateCarousel()
+
+
+//Toggle main
+const toggle = document.querySelector('.toggle');
+const nav = document.querySelector('.nav-bar');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('move');
+    nav.addEventListener('click', () => {
+      if(nav.classList.toggle('move')){
+        nav.classList.toggle('move', false)
+      }
+    })
+})
+
 

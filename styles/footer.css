@@ -31,3 +31,25 @@ span {
     color: var(--black);
 }
 
+/*
+Style responsive
+*/
+@media (max-width: 768px) {
+    /* Para pantallas móviles */
+
+    .copyright {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .socialNetwork {
+        display: flex;
+        margin: 0 .7rem;
+    }
+
+    .conditions {
+        display: none;
+    }
+
+}
+

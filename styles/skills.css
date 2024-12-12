@@ -319,6 +319,7 @@ Style responsive
 
     .skills{
         position: relative;
+        height: auto;
     }
 
     .linear{
@@ -355,8 +356,8 @@ Style responsive
         margin-bottom: 40px;
     }
 
-    .technologiesD{
-        margin-bottom: 40px;
+    .technologiesD, .versionController{
+        margin-bottom: 2rem;
     }
 
 

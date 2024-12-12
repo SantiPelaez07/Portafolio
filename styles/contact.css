@@ -145,6 +145,9 @@ form{
 Style responsive
 */
 @media (max-width: 768px) {
+    .contact {
+        height: auto;
+    }
 
     .linearDecoration {
         width: 37%;
