@@ -107,7 +107,8 @@ Style responsive
     /* Para pantallas móviles */
 
     .toggle {
-        display: block;
+        display: none;
+        /* display: block;
         white-space: normal;
         height: min-content;
         width: 100%;
@@ -116,7 +117,7 @@ Style responsive
         background: var(--secound-color);
         position: fixed;
         z-index: 3;
-        border-bottom: 1px solid #42454C;
+        border-bottom: 1px solid #42454C; */
     }
 
     .name,

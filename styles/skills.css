@@ -179,7 +179,6 @@
 
 .backendProgramming {
     display: flex;
-    justify-content: space-between;
     padding: 1% 0%;
     width: 100%;
 }
@@ -364,6 +363,11 @@ Style responsive
     .technologies {
         display: flex;
         flex-direction: column;
+    }
+
+    .backendProgramming{
+        display: flex;
+        justify-content: center;
     }
 
 }
