@@ -88,7 +88,9 @@
 }
 
 .imgProyect img {
-    display: none;
+    width: 520px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .imgProyect iframe {

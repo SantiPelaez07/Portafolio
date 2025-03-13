@@ -12,18 +12,24 @@
 
 .presentationSkills {
     color: var(--white);
+    position: relative;
+    height: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: red; */
+    margin: 0 0 20px 0;
 }
 
 .presentationSkills h2 {
-    margin-top: .6rem;
+    margin-top: .5rem;
     padding: 0 1% 1%;
+    font-size: clamp(1.25rem, 1.678vw + 0.174rem, 2.188rem);
 }
 
 .presentationSkills p {
     padding: 1%;
+    font-size: clamp(1rem, 0.447vw + 0.713rem, 1.25rem);
 }
 
 .linear {
@@ -56,19 +62,21 @@
 
 .parte1 {
     position: absolute;
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
     right: 150px;
 }
 
 .technologies {
     width: 100%;
-    height: 50%;
+    height: 70%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    /* background-color: #673AB7; */
+    
 }
 
 .fullstackLanguages {
@@ -78,7 +86,6 @@
     margin-top: 2%;
     padding: 0% 7%;
     width: 100%;
-    gap: 20%;
 }
 
 
@@ -86,14 +93,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .Back-EndTechnologies {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .designTechnologies {
@@ -108,30 +115,45 @@
     color: var(--white);
     width: max-content;
     margin: .7rem;
+    font-size: clamp(1.063rem, 0.783vw + 0.56rem, 1.5rem);
 }
 
 .frontendProgramming {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1% 0%;
-    width: 50%;
+    width: 100%;
 }
 
 .HTML,
 .CSS,
 .JS,
 .BootStrap,
+.vue,
 .JAVA,
 .SQL,
 .SpringBoot,
+.express,
 .FIGMA,
 .git,
 .gitHub {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4%;
+    margin: 4% 2%;
 }
+
+
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 0% 0%, #00000000 0% 100%);
+    border: 2px solid #192734;
+}
+
 
 .HTML i {
     background-color: #e34c26;
@@ -168,17 +190,32 @@
     transition: .4s;
 }
 
+.vue i {
+    background-color: #42b883;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
 .HTML p,
 .CSS p,
 .JS p,
-.BootStrap p {
-    margin-top: 9%;
+.BootStrap p,
+.vue p,
+.JAVA p,
+.SQL p,
+.SpringBoot p,
+.express p {
+    margin: 19% 0 0;
     color: var(--white);
 }
 
 
 .backendProgramming {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1% 0%;
     width: 100%;
 }
@@ -207,14 +244,14 @@
     transition: .4s;
 }
 
-
-.JAVA p,
-.SQL p,
-.SpringBoot p {
-    margin-top: 9%;
-    width: max-content;
+.express i {
+    background-color: #F7DF1E;
     color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
 }
+
 
 .technologiesF {
     display: flex;
@@ -236,7 +273,7 @@
 
 .tools {
     width: 70%;
-    margin-top: 2.5rem;
+    margin-top: 0;
     display: flex;
     justify-content: space-evenly;
 }

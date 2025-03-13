@@ -121,10 +121,25 @@ const nav = document.querySelector('.nav-bar');
 toggle.addEventListener('click', () => {
     nav.classList.toggle('move');
     nav.addEventListener('click', () => {
-      if(nav.classList.toggle('move')){
-        nav.classList.toggle('move', false)
-      }
+        if (nav.classList.toggle('move')) {
+            nav.classList.toggle('move', false)
+        }
     })
 })
 
+
+// Porcentajes de cada habilidad
+document.addEventListener('DOMContentLoaded', function () {
+    const skills = document.querySelectorAll(".inner-circle")
+
+    skills.forEach(skill => {
+        const percentage = skill.dataset.percentage;
+        const element = document.querySelector(".inner-circle i");
+        skill.style.width = `${element.offsetWidth + 14}px`
+        skill.style.height = `${element.offsetWidth + 14}px`
+        skill.style.background = `conic-gradient(#4caf50 ${percentage}%, #00000000 ${percentage}% 100%)`
+    })
+    
+
+})
 
