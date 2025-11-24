@@ -14,22 +14,26 @@
     display: flex;
     justify-content: center;
     padding: 1rem 0 2rem 0;
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: 100;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
 .aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15rem;
     align-items: center;
     border: 3px solid var(--white);
-    width: min-content;
-    height: min-content;
+    width: 24.875rem;
+    height: 36.5rem;
     padding: 25px;
     border-radius: 35% 0 35% 0;
     margin-right: 150px;
@@ -90,6 +94,7 @@ font-size: small;
 .downloadCV {
     display: flex;
     justify-content: center;
+    width: 270px;
     padding: 16px;
     background-color: var(--white);
     border-radius: 30px;
@@ -263,4 +268,14 @@ Style responsive
         width: 100px;
     } */
 
+}
+
+
+@media screen and (min-width: 1300px) {
+    /* Para pantallas tablets */
+
+    .me img {
+        height: 130px;
+        width: 130px;
+    }
 }

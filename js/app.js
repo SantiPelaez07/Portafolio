@@ -23,6 +23,8 @@ menuLinks.forEach(menuLink => {
     }
 });
 
+
+
 //Search input 
 const searchInput = document.querySelector('#searchGeneral');
 searchInput.addEventListener('input', () => {
