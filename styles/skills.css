@@ -344,6 +344,18 @@
 }
 
 
+@media (max-width: 420px) {
+  .presentationSkills  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .presentationSkills p {
+    width: 80%;
+  }
+
+}
+
 
 
 /* 
@@ -352,7 +364,7 @@ Style responsive
 @media (max-width: 768px) {
 
     .skills{
-        height: 990px;
+        height: 1150px;
     }
 
     .informationSkill {
@@ -361,16 +373,16 @@ Style responsive
 
     .presentationSkills {
         height: min-content;
-        padding: 15px 0;
     }
 
     .presentationSkills p {
         margin: 15px 0;
+        text-align: center;
     }
 
     .technologies {
         height: max-content;
-        margin: 0;
+        padding: 20px 0;
     }
 
     .linear {

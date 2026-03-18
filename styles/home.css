@@ -213,6 +213,15 @@ font-size: small;
 /* 
 Style responsive
 */
+@media (max-width: 420px) {
+  .aboutMe {
+    width: min-content;
+    padding: 15px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
     /* Para pantallas móviles */
 
