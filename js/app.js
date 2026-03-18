@@ -1,28 +1,47 @@
+const menuLinks = document.querySelectorAll(".mainBar a[href^='#']");
+const sections = [];
 
-const menuLinks = document.querySelectorAll('.mainBar a[href^="#"]');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const id = entry.target.getAttribute("id");
-        const menuLink = document.querySelector(`.mainBar a[href="#${id}"]`);
-        if (entry.isIntersecting) {
-            document.querySelector(".mainBar a.select").classList.remove("select")
-            menuLink.classList.add("select")
-        }
-    })
-}, {
-    rootMargin: "-30% 0px -70% 0px"
-})
-
-
-menuLinks.forEach(menuLink => {
-    const hash = menuLink.getAttribute("href");
-    const target = document.querySelector(hash);
-    if (target) {
-        observer.observe(target)
+// Obtener las secciones correspondientes
+menuLinks.forEach(link => {
+    const id = link.getAttribute("href");
+    const section = document.querySelector(id);
+    if (section) {
+        sections.push(section);
     }
+    // activar inmediatamente al hacer click
+    link.addEventListener("click", () => {
+        setActiveLink(id.substring(1));
+    });
 });
 
+
+function setActiveLink(id) {
+    menuLinks.forEach(link => {
+        link.classList.remove("select");
+    });
+    const active = document.querySelector(`.mainBar a[href="#${id}"]`);
+    if (active) {
+        active.classList.add("select");
+    }
+}
+
+
+// detectar sección visible al hacer scroll
+function updateActiveSection() {
+    const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+    let currentSection = null;
+    sections.forEach(section => {
+        if (scrollPosition >= section.offsetTop) {
+            currentSection = section;
+        }
+    });
+    if (currentSection) {
+        setActiveLink(currentSection.id);
+    }
+}
+
+window.addEventListener("scroll", updateActiveSection);
+window.addEventListener("load", updateActiveSection);
 
 
 //Search input 
